@@ -37,7 +37,11 @@ ul {
     padding-left: 20px;
   }
   
-  main {
+main {
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
+}
+
+header {
+    display:grid;
 }
