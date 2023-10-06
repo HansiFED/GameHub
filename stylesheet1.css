@@ -20,6 +20,7 @@ h1 {
     cursor:pointer;
     margin-right: 61;
     font-weight: 600;
+    transition: color 0.2s, backround-color 0.2s;
 
     &:hover {
         color: 46D3FF;
@@ -40,7 +41,7 @@ ul {
     flex-direction: row;
   }
 
-  .mainheader {
+  .headerbuttons {
     padding-left: 58px;
     padding-top: 28px;
     display: flex;
