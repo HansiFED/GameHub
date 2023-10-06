@@ -64,3 +64,9 @@ main {
     padding-top: 21px;
     padding-left: 58px;
 }
+
+.rolling-backround {
+    max-width: auto;
+    height: auto;
+    padding-top: 35px;
+}
