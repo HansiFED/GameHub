@@ -106,3 +106,15 @@ main {
 #backroundimage {
     width: 100%;
 }
+
+#shoppingcarticon {
+    stroke: 2.39;
+    scale: 1.25;
+}
+
+/*@media screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aqua;
+        scale: 0.2;
+    }
+  } */
