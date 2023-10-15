@@ -1,3 +1,13 @@
+:root {
+    --blue: #46D3FF;
+    --whitetext: FFFFFF;
+    --boxes1: 1C1C1C;
+    --boxes2: 232323;
+    
+
+}
+
+
 header {
     position: relative;
     max-width: 100%;
@@ -5,16 +15,20 @@ header {
     justify-content: left;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: aliceblue;
+    color: var(--whitetext);
     padding-left: 50;
     padding-top: 30;
     padding-bottom: 33;
     text-transform: uppercase;
+    font-size: 1.5625em;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 
 .btn {
@@ -23,7 +37,7 @@ h1 {
     font-size: 1.25em;
     text-transform: uppercase;
     background-color: 121212;
-    color: FFFFFF;
+    color: var(--whitetext);
     border-style: none;
     margin-top: 0;
     padding: 5 15;
@@ -35,6 +49,11 @@ h1 {
     &:hover {
         color: 46D3FF;
     }
+}
+
+.activebuttonpage {
+    color:#46D3FF;
+    text-decoration-line: underline;
 }
 
 body {
@@ -51,23 +70,25 @@ ul {
 
 .TopSellersGames {
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-wrap: wrap;
     margin: 51;
     padding: 0;
-    align-self: center;
     list-style: none;
+    gap: 60px;
+    justify-content: center;
+    scale: 1.05;
 
   }
 
-  .TopSellersGames > li {
-    margin-right: 60px;
-    width: 100%;
+  .TopSellersGames > li {;
+    margin-bottom: 3.75em;
+    transition: transform 0.1s ease;
   }
 
   .TopSellersGames > li:hover {
     transition: 0.1s;
     transform: scale(1.1); 
+    cursor: pointer;
   }
 
 
@@ -112,9 +133,7 @@ main {
     scale: 1.25;
 }
 
-/*@media screen and (max-width: 600px) and (orientation: portrait) {
-    body {
-        background-color: aqua;
-        scale: 0.2;
+/*@media screen and (max-width: 1050px) and (orientation: portrait) {
+    .TopSellersGames > li {
     }
-  } */
+  } 
