@@ -55,10 +55,10 @@ header {
     cursor:pointer;
     font-weight: 600;
     transition: color 0.2s, backround-color 0.2s;
+}
 
-    &:hover {
-        color: 46D3FF;
-    }
+.btn:hover {
+    color: 46D3FF;
 }
 
 .activebuttonpage {
