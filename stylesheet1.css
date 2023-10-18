@@ -185,6 +185,8 @@ h1, h2, h3 {
   }
 
 
+
+
 .rolling-backround {
     max-width: 100%;
     height: auto;
@@ -205,7 +207,7 @@ h1, h2, h3 {
 
 
 footer {
-    scale: 100%;
+
 }
 
 
@@ -240,7 +242,41 @@ footer {
 
                                 /*----------- MEDIA QUERIES -----------*/                                
 
-/* @media screen and (max-width: 1051px) and (orientation: portrait) { 
+/* @media screen and (max-width: 2466px) { 
+
+    .header-container {
+        scale: 100%;
+        }
+
+    .TopSellersGames > li {;
+        scale: 0.2vw;
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 90px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+  } 
+
+
+  
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 1051px) and (orientation: portrait) { 
 
     .header-container {
         scale: 100%;
