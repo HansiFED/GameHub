@@ -102,6 +102,7 @@ input {
 .searchbarcontainer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -171,7 +172,7 @@ h1, h2, h3 {
 
   }
 
-  .TopSellersGames > li {;
+  .TopSellersGames > li {
     margin-bottom: 3.75em;
     transition: transform 0.1s ease;
     scale: 1.20;
@@ -227,9 +228,9 @@ footer {
 
 
 
-.footertext {
+.footertext1, .footertext2, .footertext3, .footertext4, .footertext5 {
     margin-right: 120;
-    margin-left: 120;
+    margin-left: 120; 
 }
 
 
@@ -240,16 +241,12 @@ footer {
 
 
 
-                                /*----------- MEDIA QUERIES -----------*/                                
+                                /*----------- MEDIA QUERIES -----------*/              
+                                
+@media screen and (max-width: 2430px) { 
 
-/* @media screen and (max-width: 2466px) { 
-
-    .header-container {
-        scale: 100%;
-        }
-
-    .TopSellersGames > li {;
-        scale: 0.2vw;
+    .TopSellersGames > li {
+        transform: scale(0.9);
         }
  
     .TopSellersGames {
@@ -264,9 +261,226 @@ footer {
     
         }
 
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+  } 
+                                                   
+
+
+@media screen and (max-width: 2430px) { 
+
+    .TopSellersGames > li {
+        transform: scale(0.9);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 90px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+  } 
+
+@media screen and (max-width: 2240px) { 
+
+    .TopSellersGames > li {
+        transform: scale(0.95);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 90px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+    .gamecover7 {
+        display: none;
+    }
+
   } 
 
 
+
+@media screen and (max-width: 1920px) { 
+
+    .TopSellersGames > li {
+        transform: scale(1);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 100px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+    .gamecover6 {
+        display: none;
+    }
+
+    .gamecover7 {
+        display: none;
+    }
+
+  } 
+
+
+@media screen and (max-width: 1648px) { 
+
+    .TopSellersGames > li {
+        transform: scale(0.9);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 90px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+    
+
+  } 
+ 
+  
+  
+@media screen and (max-width: 1604px) { 
+
+    .TopSellersGames > li {
+        transform: scale(0.8);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 60px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+   
+    
+
+  } 
+                 
+  
+@media screen and (max-width: 1560px) {  /* HERE THE UI CHANGES TO PHONE SIZE ISH*/
+
+    .headercontainermain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px;
+    }
+
+
+    .TopSellersGames > li {
+        transform: scale(0.8);
+        }
+ 
+    .TopSellersGames {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 51;
+        padding: 0;
+        list-style: none;
+        gap: 60px;
+        justify-content: center;
+        scale: 1;
+    
+        }
+
+    .footertext1 {
+        display: none;
+    }
+
+    .footerline1 {
+        display: none;
+    }
+
+    .headerbuttons {
+        display: none;
+    }
+
+   
+    
+
+  } 
+                              
+                 
   
 
 
