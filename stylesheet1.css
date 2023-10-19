@@ -440,7 +440,7 @@ footer {
     .headercontainermain {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         margin: 20px;
@@ -472,6 +472,22 @@ footer {
     }
 
     .headerbuttons {
+        display: none;
+    }
+
+    .footertext4 {
+        display: none;
+    }
+
+    .footertext3 {
+        display: none;
+    }
+
+    .footerline3 {
+        display: none;
+    }
+
+    .footerline4 {
         display: none;
     }
 
