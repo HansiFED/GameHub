@@ -1,0 +1,40 @@
+                              
+
+  @media screen and (max-width: 1560px) {  /*---MOBILE VERSION----*/
+
+    .TopSellersGames > li {
+        }
+ 
+    .footercontainer {
+        display: none;
+    }
+
+    .headerbuttons {
+        display: none;
+    }
+
+    #searchbar-desktop{
+        display: none;
+    }
+
+    #mobilesearchbarcontainer {
+        display: block;
+    }
+    .headercontainermain {
+        justify-content: space-between;
+    }
+
+
+    .footercontainermobile {
+        display: block;
+        align-items: center;
+        display: flex;
+        background-color: var(--mobilefooterbackround);
+        justify-content: space-between;
+        padding: 30;
+    }
+
+  } 
+                                                   
+
+

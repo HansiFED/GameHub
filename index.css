@@ -1,0 +1,106 @@
+@import url('CSS/_header.css');
+@import url('CSS/_footer.css');
+
+/*----------- MEDIA QUERIES NEEDS TO BE AT BOTTOM -----------*/          
+@import url('CSS/_mediaqueries.css');
+
+                              
+
+
+
+:root {
+    --blue: #46D3FF;
+    --whitetext: FFFFFF;
+    --boxes1: 1C1C1C;
+    --boxes2: 232323;
+}
+
+
+                                /*----------- MAIN AREA -----------*/
+
+
+
+
+body {
+    background-color: 121212;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 350px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--whitetext);
+
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--whitetext);
+    padding-left: 50;
+    padding-top: 30;
+    padding-bottom: 45;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#featuredandreccomended {
+  font-size: 1.5rem;
+}
+
+
+.TopSellersGames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    list-style: none;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 4.75rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    
+
+  }
+
+  .TopSellersGames  li {
+    transition: transform 0.1s ease;
+  }
+
+
+  .TopSellersGames li img {
+    max-width: 100%;
+    width: 273px;
+  }
+
+
+  .TopSellersGames > li:hover {
+    transition: 0.1s;
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+
+
+
+
+.rolling-backround {
+    width: 100%;
+    }
+
+
+#backroundimage {
+    width: 100%;
+}
+
+
+                                                 
+
+                                                 
+
+

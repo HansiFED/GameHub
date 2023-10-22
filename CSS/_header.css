@@ -1,0 +1,127 @@
+header {
+    top: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.headercontainermain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+
+
+.header-container-left {
+    display: flex;
+    justify-content: left;
+}
+
+.headerbuttons {
+    margin-left: 54px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 61px;
+  }
+
+
+  .btn {
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: 121212;
+    color: var(--whitetext);
+    border-style: none;
+    margin-top: 0;
+    padding: 5 15;
+    cursor:pointer;
+    font-weight: 600;
+    transition: color 0.2s, backround-color 0.2s;
+}
+
+.btn:hover {
+    color: 46D3FF;
+}
+
+.activebuttonpage {
+    color:#46D3FF;
+    text-decoration-line: underline;
+}
+
+.searchbar {
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    height: 34px;
+}
+
+
+#searchicon {
+    width: 26px;
+    margin-right: 20px;
+}
+
+form.searchbar {
+    background-color: var(--whitetext);
+    display: flex;
+    margin:0 47 0 0;
+    padding-left: 20px;
+}
+
+input {
+    padding: 0;
+    border: none;
+}
+
+.searchbar > input {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchbar > input[type="text"]:focus {
+    outline: var(--whitetext);
+}
+
+.header-container-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+form#searchbar-mobile {
+    background-color: var(--whitetext);
+    display: flex;
+    margin:0 47 0 0;
+    padding-left: 20px;
+    margin-right: 0;
+}
+
+
+#mobilesearchbarcontainer {
+    display: none;
+}
+
+#logoimage {
+    margin-left: 58px;
+    width: 80;
+}
+
+#shoppingcarticon {
+    stroke: 2.39;
+    scale: 1.25;
+    width: 28px;
+    margin-right: 30;
+}
+
+#pfpicture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 30px;
+}
