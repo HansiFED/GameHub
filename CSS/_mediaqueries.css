@@ -1,37 +1,116 @@
-                              
+:root {
+    --blue: #46D3FF;
+    --whitetext: FFFFFF;
+    --boxes1: 1C1C1C;
+    --boxes2: 232323;
+    --pagebackroundcolor: 121212;
+    --footer: rgba(82, 82, 82, 0.17);
+    --mobilefooterbackround: 0C0C0C;
+}           
+
+
+
+
 
   @media screen and (max-width: 1560px) {  /*---MOBILE VERSION----*/
 
-    .TopSellersGames > li {
-        }
- 
-    .footercontainer {
-        display: none;
+
+    header {
+        background-color: 0C0C0C;
     }
+
+    body {
+        min-width: 380px;
+    }
+
+    #logoimage {
+        margin: 0;
+        width: 80;
+        max-width: 80px;
+        width: 15vw;
+    }
+
+    #pfpicture {
+        max-width: 45px;
+        max-height: 45px;
+        border-radius: 0;
+        margin: 0;
+    }
+
 
     .headerbuttons {
         display: none;
     }
 
-    #searchbar-desktop{
+    form.searchbar {
+        background-color: var(--pagebackroundcolor);
+        display: flex;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        height: 40px;
+
+
+    }
+
+    form#searchbar-desktop.searchbar {
+        min-width: 130px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 20;
+        margin-right: 20;
+    }
+
+    input#searchplaceholder {
+        width: 30vw;
+        min-width: 130px;
+        padding: 10;
+    }
+
+
+
+
+    .searchbar > input {
+        background-color: var(--pagebackroundcolor);
+        color: var(--whitetext);
+    }
+
+    input::placeholder {
+        color: var(--whitetext);
+      }
+
+
+    #shoppingcarticon {
         display: none;
     }
 
-    #mobilesearchbarcontainer {
-        display: block;
-    }
+
     .headercontainermain {
+        display: flex;
         justify-content: space-between;
+        margin-left: 25px;
+        margin-right: 25px;
     }
+
+
+    .footercontainer {
+        display: none;
+    }
+
+
+
 
 
     .footercontainermobile {
         display: block;
-        align-items: center;
         display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
         background-color: var(--mobilefooterbackround);
         justify-content: space-between;
-        padding: 30;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
     }
 
   } 

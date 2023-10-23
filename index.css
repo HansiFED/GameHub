@@ -13,6 +13,9 @@
     --whitetext: FFFFFF;
     --boxes1: 1C1C1C;
     --boxes2: 232323;
+    --pagebackroundcolor: 121212;
+    --footer: rgba(82, 82, 82, 0.17);
+    --mobilefooterbackround: 0C0C0C;
 }
 
 
@@ -22,7 +25,7 @@
 
 
 body {
-    background-color: 121212;
+    background-color: var(--pagebackroundcolor);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -62,9 +65,10 @@ h1, h2, h3 {
     justify-content: center;
     max-width: 100%;
     padding: 0;
-    margin-bottom: 4.75rem;
+    margin-bottom: 4rem;
     margin-left: 3.5rem;
     margin-right: 3.5rem;
+    margin-top: 0;
     
 
   }
