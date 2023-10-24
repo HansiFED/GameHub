@@ -58,7 +58,7 @@ h1, h2, h3 {
 .TopSellersGames {
     display: flex;
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: 4vw;
     list-style: none;
     justify-content: center;
     max-width: 100%;
@@ -92,9 +92,8 @@ h1, h2, h3 {
 
 
 #backroundimage {
-    width: 100%;
+  width: 100%;
 }
-
 
 
 
@@ -142,6 +141,19 @@ I won't be using this over again, I'd just rather have it here for now and keep 
         width: 20vw !important;
         min-width: 130px !important;
       }
+      
+      #backroundimage {
+        width: 200vw;
+      }
+      
+      
+      .backroundimagecontainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+      }
+      
 
   }     
 
