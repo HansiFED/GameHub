@@ -12,7 +12,7 @@
 
 
 
-  @media screen and (max-width: 1560px) {  /*---MOBILE VERSION----*/
+  @media screen and (max-width: 1560px) {  /*---MOBILE DEVICES VERSION----*/
 
 
     header {
@@ -62,7 +62,8 @@
 
     input#searchplaceholder {
         width: 30vw;
-        min-width: 130px;
+        min-width: 120px;
+        max-width: 350px;
         padding: 10;
     }
 
@@ -83,6 +84,8 @@
         display: none;
     }
 
+    
+
 
     .headercontainermain {
         display: flex;
@@ -91,13 +94,24 @@
         margin-right: 25px;
     }
 
+    
+    .TopSellersGames li img {
+        max-width: 220px !important; 
+        width: 20vw !important;
+        min-width: 180px !important;
+        scale: 1 !important;
+      }
+
+
+      .TopSellersGames {
+        gap: 90px !important;
+      }
+    
+
 
     .footercontainer {
         display: none;
     }
-
-
-
 
 
     .footercontainermobile {
@@ -115,5 +129,3 @@
 
   } 
                                                    
-
-

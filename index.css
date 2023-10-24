@@ -6,8 +6,6 @@
 
                               
 
-
-
 :root {
     --blue: #46D3FF;
     --whitetext: FFFFFF;
@@ -41,7 +39,7 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: var(--whitetext);
-    padding-left: 50;
+    padding-left: 3%;
     padding-top: 30;
     padding-bottom: 45;
     text-transform: uppercase;
@@ -60,7 +58,7 @@ h1, h2, h3 {
 .TopSellersGames {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 3vw;
     list-style: none;
     justify-content: center;
     max-width: 100%;
@@ -79,8 +77,10 @@ h1, h2, h3 {
 
 
   .TopSellersGames li img {
-    max-width: 100%;
-    width: 273px;
+    max-width: 400px;
+    width: 10.1vw;
+    min-width: 200px;
+    scale: 1.08;
   }
 
 
@@ -91,20 +91,53 @@ h1, h2, h3 {
   }
 
 
-
-
-.rolling-backround {
-    width: 100%;
-    }
-
-
 #backroundimage {
     width: 100%;
 }
 
 
-                                                 
 
-                                                 
+
+/* I would put this in media queries.css but since 
+I won't be using this over again, I'd just rather have it here for now and keep the mediaqueries.css clean for re-usability */
+
+@media screen and (max-width: 1560px) {  /*---MOBILE DEVICES VERSION----*/
+  
+  .TopSellersGames li img {
+      max-width: 220px !important; 
+      width: 20vw !important;
+      min-width: 180px !important;
+      scale: 1 !important;
+    }
+
+
+    .TopSellersGames {
+      gap: 60px !important;
+    }
+  
+
+
+}                                           
+                      
+  @media screen and (max-width: 562px) { /*Small fixes to phone version.*/ 
+
+    .TopSellersGames {
+        margin-left: 10 !important;
+        margin-right: 10 !important;
+        gap: 50px !important;
+    }
+
+    h1,h2,h3 {
+        font-size: 22px !important;
+        padding-left: 40px !important;
+    }
+
+    .TopSellersGames li img {
+        max-width: 100% !important; 
+        width: 20vw !important;
+        min-width: 130px !important;
+      }
+
+  }     
 
 
