@@ -98,6 +98,7 @@ h1, h2, h3 {
 
 
 
+
 /* I would put this in media queries.css but since 
 I won't be using this over again, I'd just rather have it here for now and keep the mediaqueries.css clean for re-usability */
 
@@ -113,6 +114,10 @@ I won't be using this over again, I'd just rather have it here for now and keep 
 
     .TopSellersGames {
       gap: 60px !important;
+    }
+
+    #bottomlist {
+      padding-bottom: 110px;
     }
   
 
