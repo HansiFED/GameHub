@@ -39,7 +39,7 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: var(--whitetext);
-    padding-left: 3%;
+    padding-left: 40;
     padding-top: 30;
     padding-bottom: 45;
     text-transform: uppercase;
