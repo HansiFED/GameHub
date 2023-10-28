@@ -1,8 +1,8 @@
-@import url('CSS/_header.css');
-@import url('CSS/_footer.css');
+@import url(CSS/_header.css);
+@import url(CSS/_footer.css);
 
 /*----------- MEDIA QUERIES NEEDS TO BE AT BOTTOM -----------*/          
-@import url('CSS/_mediaqueries.css');
+@import url(CSS/_mediaqueries.css);
 
                               
 
