@@ -125,10 +125,9 @@ form#searchbar-mobile {
 }
 
 #shoppingcarticon {
-    stroke: 2.39;
     scale: 1.25;
     width: 28px;
-    margin-right: 30;
+    margin-right: 30px;
 }
 
 #pfpicture {
