@@ -37,7 +37,7 @@ body {
 .backroundcontainer {
     display: flex;
     flex-direction: column;
-    background-image: url('/images/Logos_ect/backgroundstore.png');
+    background-image: url('../images/Logos_ect/backgroundstore.png');
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -59,18 +59,25 @@ h2 {
 
 .listingtextcontainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 60vw;
 }
 
 .sortbycontainer {
     display: flex;
+    gap: 50px;
+    align-items: center ;
 }
 
 
 #sortby {
     background-color: var(--boxes1);
     display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .listingimages {
@@ -129,6 +136,21 @@ h2 {
     background-color: var(--pricetagcolorhover);
 }
 
-.maincontainer {
-
+#relevancetag {
+    margin: 0px;
 }
+
+.checkbox {
+    display: flex;
+   
+}
+
+.checkboxcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .maincontainer {} */
+
+
+
