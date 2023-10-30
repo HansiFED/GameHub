@@ -162,11 +162,10 @@ h2 {
 
 .maincontainer {
     display: flex;
-    width: 99%;
-    margin-top: 50px;
     margin-left: 25px;
     justify-content: center;
     gap: 7vw;
+    margin-top: 40px;
 }
 
 .maintagscontainer {
