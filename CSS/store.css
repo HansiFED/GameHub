@@ -162,7 +162,7 @@ h2 {
 
 .maincontainer {
     display: flex;
-    width: 100%;
+    width: 99%;
     margin-top: 50px;
     margin-left: 25px;
     justify-content: center;
