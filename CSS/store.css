@@ -45,6 +45,42 @@ body {
     justify-content: center;
 }
 
+.maincontainer {
+    display: flex;
+    margin-left: 25px;
+    justify-content: center;
+    gap: 7vw;
+    margin-top: 40px;
+}
+
+.maintagscontainer > h3 {
+    text-decoration: underline;
+    font-weight: 200;
+    font-size: 2.5rem;   
+    margin-top: 20px; 
+}
+
+.checkboxcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 5px;
+   
+}
+
+
+.checkboxcontainer > h4 {
+    font-weight: 200;
+    font-size: 2.5rem; 
+    margin-bottom: 40px;   
+    margin-top: 100px;
+}
+
+
 h1 {
     font-weight: 300;
     text-transform: uppercase;
@@ -57,14 +93,16 @@ h2 {
     margin: 0;
 }
 
-.listingtextcontainer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.15rem;
+#relevancetag {
+    margin: 0px;
 }
 
-.listingtextcontainer > p {
-    font-weight: 200;
+.allgames {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+    gap: 20px;
 }
 
 .sortbycontainer {
@@ -72,7 +110,6 @@ h2 {
     gap: 25px;
     align-items: center ;
 }
-
 
 #sortby {
     background-color: var(--boxes1);
@@ -83,6 +120,24 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
+.listingtextcontainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+}
+
+.textinsidelistingcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listingtextcontainer > p {
+    font-weight: 200;
+}
+
 
 .listingimages {
     width: 377px;
@@ -110,27 +165,14 @@ h2 {
     min-width: 125px;
 }
 
-.allgames {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 40px;
-    gap: 20px;
-}
-
 .gametitle {
     font-size: 1.5rem;
     margin: 0;
     font-weight: 300;
 }
 
-.textinsidelistingcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.textinsidelistingcontainer img {
+.textinsidelistingcontainer img { /* Windows, logo under the name of the game*/
     width: 40px;
 }
 
@@ -144,50 +186,8 @@ h2 {
     background-color: var(--pricetagcolorhover);
 }
 
-#relevancetag {
-    margin: 0px;
-}
 
-.checkbox {
-    display: flex;
-    gap: 5px;
-   
-}
 
-.checkboxcontainer {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.maincontainer {
-    display: flex;
-    margin-left: 25px;
-    justify-content: center;
-    gap: 7vw;
-    margin-top: 40px;
-}
-
-.maintagscontainer {
-}
-
-.maintagscontainer > h3 {
-    text-decoration: underline;
-    font-weight: 200;
-    font-size: 2.5rem;   
-    margin-top: 20px; 
-}
-
-.checkboxcontainer > h4 {
-    font-weight: 200;
-    font-size: 2.5rem; 
-    margin-bottom: 40px;   
-    margin-top: 100px;
-}
-
-.checkbox > label {
-    font-weight: 200;
-}
 
 
 
