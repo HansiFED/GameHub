@@ -125,7 +125,7 @@ I won't be using this over again, I'd just rather have it here for now and keep 
 
 }                                           
                       
-  @media screen and (max-width: 562px) { /*Small fixes to phone version.*/ 
+  @media screen and (max-width: 562px) { /*Small fixes to phone version. (tried putting this in mediaqueries but didnt work*/ 
 
     .TopSellersGames {
         margin-left: 10 !important;

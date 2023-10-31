@@ -127,6 +127,175 @@
         width: 100%;
     }
 
+    /* ---------------------------- STORE.HTML PAGE ---------------------------- */
+
+
+    .maintagscontainer {
+        display: none;
+    }
+
+    .allgames {
+        width: 100% !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-bottom: 100px !important;
+
+    
+    
+    }
+
+    
+    .listingtextcontainer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.15rem;
+    }
+    
+    .textinsidelistingcontainer {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+    
+    .listingtextcontainer > p {
+        font-weight: 200;
+    }
+    
+    
+    .listingimages {
+        width: 20vw !important;
+        height: 6vw !important;
+        min-width: 150px !important;
+        min-height: 45px !important;
+    }
+    
+    .gamelistingcontainer {
+        display: flex;
+        background-color: var(--boxes1);
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .pricetag {
+        color: var(--whitetext);
+        background-color: var(--pricetagcolor);
+        text-align: center;
+        align-self: center;
+        padding: 0px !important;
+        font-size: 1rem !important;
+        margin: 0px !important;
+        margin-right: 20px !important;
+        transition: background-color 0.5s;
+        cursor: pointer;
+        width: 11vw !important;
+        min-width: 88px !important;
+        min-height: 20px !important;
+    }
+    
+    .gametitle {
+        font-size: 100% !important;
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    
+    .textinsidelistingcontainer img { /* Windows, logo under the name of the game*/
+        width: 2.5vw !important;
+        min-width: 10px !important;
+        max-width: 30px !important;
+    
+    }
+    
+    .listingcontainerleft {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .maincontainer {
+        margin: 0 !important;
+        justify-content: space-between !important;
+    }
+    
+  
+
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  @media screen and (max-width: 562px) { /*PHONE VERSION MEDIA QUERIES*/ 
+
+
+    /* ---------------------------- STORE.HTML PAGE ---------------------------- */
+
+    .backroundcontainer > h1 {
+        font-size: 40px;
+    }
+
+    .backroundcontainer > h2 {
+        text-align: center;
+    }
+
+    .textinsidelistingcontainer img { /* Windows, logo under the name of the game*/
+        display: none !important;
+    
+    }
+
+    .listingtextcontainer > p {
+        display: none;
+    }
+    
+    .listingtextcontainer {
+        align-self: center !important;
+    }
+
+    .pricetag {
+        font-size: 0.9rem !important;
+        margin-right: 5px !important;
+    }
+
+    .gametitle {
+        font-size: 0.8rem !important;
+    }
+
+    .allgames {
+        margin-bottom: 20px !important;
+    }
+
+
+
+
+
+
+
+
+    /* ---------------------------- LIBRARY.HTML PAGE ---------------------------- */
+
+    .installedgames {
+        justify-content: center !important;
+        gap: 6vw !important;
+        row-gap: 7vw !important;
+    }
+
+    
+    .notinstalledgames {
+        justify-content: center !important;
+        gap: 6vw !important;
+        row-gap: 7vw !important;
+    }
 
   } 
-                                                   
+                                    

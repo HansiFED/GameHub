@@ -114,6 +114,7 @@ body {
 .installedornottext {
     font-size: 1.2rem;
     font-weight: 200;
+    text-align: center;
 }
 
 .installedgames {
@@ -121,11 +122,12 @@ body {
     flex-wrap: wrap;
     row-gap: 10vw;
     gap: 2vw;
+    justify-content: space-between;
 
 }
 
 .installedgames > img {
-    width: 10vw;
+    width: 9vw;
     min-width: 150px;
     max-width: 290px;
     align-self: center;
@@ -136,17 +138,23 @@ body {
     flex-wrap: wrap;
     row-gap: 10vw;
     gap: 2vw;
+    justify-content: space-between;
 
 }
 
 .notinstalledgames > img {
-    width: 10vw;
+    width: 9vw;
     min-width: 150px;
     max-width: 290px;
     align-self: center;
     opacity: 30%;
 
 }
+
+.searchbarlibrary {
+    display: none !important;
+}
+
 
 
 
