@@ -106,6 +106,8 @@
       .TopSellersGames {
         gap: 90px !important;
       }
+
+    /* ---------------------------- FOOTER ---------------------------- */      
     
 
 
@@ -295,6 +297,31 @@
         justify-content: center !important;
         gap: 6vw !important;
         row-gap: 7vw !important;
+    }
+
+
+    .installedgames > img {
+        width: 9vw;
+        min-width: 100px !important;
+        max-width: 290px;
+        align-self: center;
+        transition: 0.2s;
+    }
+
+    .notinstalledgames > img {
+        width: 9vw;
+        min-width: 100px !important;
+        max-width: 290px;
+        align-self: center;
+        transition: 0.2s;
+    }
+    
+    .installedornottext {
+        display: none;
+    }
+
+    .uppertextcontainer {
+        justify-content: center !important;
     }
 
   } 

@@ -131,6 +131,12 @@ body {
     min-width: 150px;
     max-width: 290px;
     align-self: center;
+    transition: 0.2s;
+}
+
+.installedgames > img:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
 }
 
 .notinstalledgames {
@@ -148,7 +154,13 @@ body {
     max-width: 290px;
     align-self: center;
     opacity: 30%;
+    transition: 0.2s;
 
+}
+
+.notinstalledgames > img:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
 }
 
 .searchbarlibrary {

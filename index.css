@@ -72,7 +72,7 @@ h1, h2, h3 {
   }
 
   .TopSellersGames  li {
-    transition: transform 0.1s ease;
+    transition: transform 0.2s ease;
   }
 
 
@@ -85,7 +85,6 @@ h1, h2, h3 {
 
 
   .TopSellersGames > li:hover {
-    transition: 0.1s;
     transform: scale(1.1); 
     cursor: pointer;
   }
