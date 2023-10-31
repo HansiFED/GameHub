@@ -219,6 +219,16 @@
         justify-content: space-between !important;
     }
     
+
+        /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+
+    .textcontainercart > h1 {
+            font-size: 2.5rem;
+    }
+    
+    .textcontainercart > h2 {
+            font-size: 1rem;
+    }
   
 
   }
@@ -323,6 +333,18 @@
     .uppertextcontainer {
         justify-content: center !important;
     }
+
+
+     /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+
+
+     h1 {
+        font-size: 1.8rem !important;
+     }
+
+     h2 {
+        font-size: 1rem !important;
+     }
 
   } 
                                     
