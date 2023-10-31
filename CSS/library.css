@@ -131,10 +131,11 @@ body {
     min-width: 150px;
     max-width: 290px;
     align-self: center;
-    transition: 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .installedgames > img:hover {
+    transition: transform 0.2s ease;
     transform: scale(1.1); 
     cursor: pointer;
 }
