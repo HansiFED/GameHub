@@ -222,13 +222,27 @@
 
         /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
 
-    .textcontainercart > h1 {
-            font-size: 2.5rem;
+    #emptycartheader1 {
+            font-size: 2.5rem !important;
     }
     
-    .textcontainercart > h2 {
-            font-size: 1rem;
+    #addgamestocart {
+            font-size: 1rem !important;
     }
+
+
+        /* ---------------------------- ABOUT HTML PAGE ---------------------------- */
+
+        .aboutpagetextcontainer > p {
+            text-align: left !important;
+            font-weight: 200;
+        }
+
+        .aboutpagemaincontainer {
+        
+        padding-bottom: 100px !important;
+            
+        }
   
 
   }
@@ -338,13 +352,15 @@
      /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
 
 
-     h1 {
-        font-size: 1.8rem !important;
+     #emptycartheader1 {
+        font-size: 1.5rem !important;
      }
 
-     h2 {
+     #addgamestocart {
         font-size: 1rem !important;
      }
+    
+    
 
   } 
                                     

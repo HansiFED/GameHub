@@ -39,7 +39,7 @@ body {
 }
 
 
-h1 {
+#emptycartheader1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: var(--whitetext);
