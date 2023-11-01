@@ -35,7 +35,7 @@ body {
 }
 
 .aboutbackroundcontainer {
-    background-image: url(/images/Logos_ect/phonemenuebackround.png);
+    background-image: url(../images/Logos_ect/phonemenuebackround.png);
     background-size: cover;
     display: flex;
     justify-content: center;
