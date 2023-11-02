@@ -1,253 +1,227 @@
 :root {
-    --blue: #46D3FF;
-    --whitetext: FFFFFF;
-    --boxes1: 1C1C1C;
-    --boxes2: 232323;
-    --pagebackroundcolor: 121212;
-    --footer: rgba(82, 82, 82, 0.17);
-    --mobilefooterbackround: 0C0C0C;
-}           
+  --blue: #46d3ff;
+  --whitetext: FFFFFF;
+  --boxes1: 1C1C1C;
+  --boxes2: 232323;
+  --pagebackroundcolor: 121212;
+  --footer: rgba(82, 82, 82, 0.17);
+  --mobilefooterbackround: 0C0C0C;
+}
 
 
 
 
 
-  @media screen and (max-width: 1560px) {  /*---MOBILE DEVICES VERSION, FOOTER & HEADER----*/
-
-
-    header {
-        background-color: 0C0C0C;
-    }
-
-    body {
-        min-width: 380px;
-    }
-
-    #logoimage {
-        margin: 0;
-        width: 80;
-        max-width: 80px;
-        width: 15vw;
-    }
-
-    #pfpicture {
-        max-width: 45px;
-        max-height: 45px;
-        border-radius: 0;
-        margin: 0;
-    }
-
-
-    .headerbuttons {
-        display: none;
-    }
-
-    form.searchbar {
-        background-color: var(--pagebackroundcolor);
-        display: flex;
-        padding-left: 10px;
-        font-family: 'Poppins', sans-serif;
-        height: 40px;
-
-
-    }
-
-    form#searchbar-desktop.searchbar {
-        min-width: 130px;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 20;
-        margin-right: 20;
-    }
-
-    input#searchplaceholder {
-        width: 30vw;
-        min-width: 120px;
-        max-width: 350px;
-        padding: 10;
-    }
 
 
 
 
-    .searchbar > input {
-        background-color: var(--pagebackroundcolor);
-        color: var(--whitetext);
-    }
+@media screen and (max-width: 1100px) {
+  /*---MOBILE DEVICES VERSION, FOOTER & HEADER----*/
 
-    input::placeholder {
-        color: var(--whitetext);
-      }
-
-
-    #shoppingcarticon {
-        display: none;
-    }
-
-    
-
-
-    .headercontainermain {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    
-    .TopSellersGames li img {
-        max-width: 220px !important; 
-        width: 20vw !important;
-        min-width: 180px !important;
-        scale: 1 !important;
-      }
-
-
-      .TopSellersGames {
-        gap: 90px !important;
-      }
-
-    /* ---------------------------- FOOTER ---------------------------- */      
-    
-
-
-    .footercontainer {
-        display: none;
-    }
-
-
-    .footercontainermobile {
-        display: block;
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        background-color: var(--mobilefooterbackround);
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
-
-    /* ---------------------------- STORE.HTML PAGE ---------------------------- */
-
-
-    .maintagscontainer {
-        display: none;
-    }
-
-    .allgames {
-        width: 100% !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-        margin-bottom: 100px !important;
-
-    
-    
-    }
-
-    
-    .listingtextcontainer {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.15rem;
-    }
-    
-    .textinsidelistingcontainer {
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-    }
-    
-    .listingtextcontainer > p {
-        font-weight: 200;
-    }
-    
-    
-    .listingimages {
-        width: 20vw !important;
-        height: 6vw !important;
-        min-width: 150px !important;
-        min-height: 45px !important;
-    }
-    
-    .gamelistingcontainer {
-        display: flex;
-        background-color: var(--boxes1);
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    .pricetag {
-        color: var(--whitetext);
-        background-color: var(--pricetagcolor);
-        text-align: center;
-        align-self: center;
-        padding: 0px !important;
-        font-size: 1rem !important;
-        margin: 0px !important;
-        margin-right: 20px !important;
-        transition: background-color 0.5s;
-        cursor: pointer;
-        width: 11vw !important;
-        min-width: 88px !important;
-        min-height: 20px !important;
-    }
-    
-    .gametitle {
-        font-size: 100% !important;
-        margin: 0;
-        font-weight: 300;
-    }
-    
-    
-    .textinsidelistingcontainer img { /* Windows, logo under the name of the game*/
-        width: 2.5vw !important;
-        min-width: 10px !important;
-        max-width: 30px !important;
-    
-    }
-    
-    .listingcontainerleft {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .maincontainer {
-        margin: 0 !important;
-        justify-content: space-between !important;
-    }
-    
-
-        /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
-
-    #emptycartheader1 {
-            font-size: 2.5rem !important;
-    }
-    
-    #addgamestocart {
-            font-size: 1rem !important;
-    }
-
-
-        /* ---------------------------- ABOUT HTML PAGE ---------------------------- */
-
-        .aboutpagetextcontainer > p {
-            text-align: left !important;
-            font-weight: 200;
-        }
-
-        .aboutpagemaincontainer {
-        
-        padding-bottom: 100px !important;
-            
-        }
-  
-
+  header {
+    background-color: 0C0C0C;
   }
-  
-  
+
+  body {
+    min-width: 380px;
+  }
+
+  #logoimage {
+    margin: 0;
+    width: 80;
+    max-width: 80px;
+    width: 15vw;
+  }
+
+  #pfpicture {
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .headerbuttons {
+    display: none;
+  }
+
+  form.searchbar {
+    background-color: var(--pagebackroundcolor);
+    display: flex;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+  }
+
+  form#searchbar-desktop.searchbar {
+    min-width: 130px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20;
+    margin-right: 20;
+  }
+
+  input#searchplaceholder {
+    width: 30vw;
+    min-width: 120px;
+    max-width: 350px;
+    padding: 10;
+  }
+
+  .searchbar > input {
+    background-color: var(--pagebackroundcolor);
+    color: var(--whitetext);
+  }
+
+  input::placeholder {
+    color: var(--whitetext);
+  }
+
+  #shoppingcarticon {
+    display: none;
+  }
+
+  .headercontainermain {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .TopSellersGames li img {
+    max-width: 220px !important;
+    width: 20vw !important;
+    min-width: 180px !important;
+    scale: 1 !important;
+  }
+
+  .TopSellersGames {
+    gap: 90px !important;
+  }
+
+  /* ---------------------------- FOOTER ---------------------------- */
+
+  .footercontainer {
+    display: none;
+  }
+
+  .footercontainermobile {
+    display: block;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--mobilefooterbackround);
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  /* ---------------------------- STORE.HTML PAGE ---------------------------- */
+
+  .maintagscontainer {
+    display: none;
+  }
+
+  .allgames {
+    width: 100% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: 100px !important;
+  }
+
+  .listingtextcontainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+  }
+
+  .textinsidelistingcontainer {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+  }
+
+  .listingtextcontainer > p {
+    font-weight: 200;
+  }
+
+  .listingimages {
+    width: 20vw !important;
+    height: 6vw !important;
+    min-width: 150px !important;
+    min-height: 45px !important;
+  }
+
+  .gamelistingcontainer {
+    display: flex;
+    background-color: var(--boxes1);
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pricetag {
+    color: var(--whitetext);
+    background-color: var(--pricetagcolor);
+    text-align: center;
+    align-self: center;
+    padding: 0px !important;
+    font-size: 1rem !important;
+    margin: 0px !important;
+    margin-right: 20px !important;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    width: 11vw !important;
+    min-width: 88px !important;
+    min-height: 20px !important;
+  }
+
+  .gametitle {
+    font-size: 100% !important;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .textinsidelistingcontainer img {
+    /* Windows, logo under the name of the game*/
+    width: 2.5vw !important;
+    min-width: 10px !important;
+    max-width: 30px !important;
+  }
+
+  .listingcontainerleft {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .maincontainer {
+    margin: 0 !important;
+    justify-content: space-between !important;
+  }
+
+  /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+
+  #emptycartheader1 {
+    font-size: 2.5rem !important;
+  }
+
+  #addgamestocart {
+    font-size: 1rem !important;
+  }
+
+  /* ---------------------------- ABOUT HTML PAGE ---------------------------- */
+
+  .aboutpagetextcontainer > p {
+    text-align: left !important;
+    font-weight: 200;
+  }
+
+  .aboutpagemaincontainer {
+    padding-bottom: 100px !important;
+  }
+}
 
 
 
@@ -260,46 +234,6 @@
 
 
 
-  
-
-  @media screen and (max-width: 562px) { /*PHONE VERSION MEDIA QUERIES*/ 
-
-
-    /* ---------------------------- STORE.HTML PAGE ---------------------------- */
-
-    .backroundcontainer > h1 {
-        font-size: 40px;
-    }
-
-    .backroundcontainer > h2 {
-        text-align: center;
-    }
-
-    .textinsidelistingcontainer img { /* Windows, logo under the name of the game*/
-        display: none !important;
-    
-    }
-
-    .listingtextcontainer > p {
-        display: none;
-    }
-    
-    .listingtextcontainer {
-        align-self: center !important;
-    }
-
-    .pricetag {
-        font-size: 0.9rem !important;
-        margin-right: 5px !important;
-    }
-
-    .gametitle {
-        font-size: 0.8rem !important;
-    }
-
-    .allgames {
-        margin-bottom: 20px !important;
-    }
 
 
 
@@ -308,80 +242,108 @@
 
 
 
-    /* ---------------------------- LIBRARY.HTML PAGE ---------------------------- */
-
-    .installedgames {
-        justify-content: center !important;
-        gap: 6vw !important;
-        row-gap: 7vw !important;
-    }
-
-    
-    .notinstalledgames {
-        justify-content: center !important;
-        gap: 6vw !important;
-        row-gap: 7vw !important;
-    }
 
 
-    .installedgames > img {
-        width: 9vw;
-        min-width: 100px !important;
-        max-width: 290px;
-        align-self: center;
-        transition: 0.2s;
-    }
+@media screen and (max-width: 562px) {
+  /*PHONE VERSION MEDIA QUERIES*/
 
-    .notinstalledgames > img {
-        width: 9vw;
-        min-width: 100px !important;
-        max-width: 290px;
-        align-self: center;
-        transition: 0.2s;
-    }
-    
-    .installedornottext {
-        display: none;
-    }
+  /* ---------------------------- STORE.HTML PAGE ---------------------------- */
 
-    .uppertextcontainer {
-        justify-content: center !important;
-    }
+  .backroundcontainer > h1 {
+    font-size: 40px;
+  }
 
+  .backroundcontainer > h2 {
+    text-align: center;
+  }
 
+  .textinsidelistingcontainer img {
+    /* Windows, logo under the name of the game*/
+    display: none !important;
+  }
 
+  .listingtextcontainer > p {
+    display: none;
+  }
 
+  .listingtextcontainer {
+    align-self: center !important;
+  }
 
-    /* ---------------------------- SELL.HTML PAGE ---------------------------- */
+  .pricetag {
+    font-size: 0.9rem !important;
+    margin-right: 5px !important;
+  }
 
-    .sellheader1 {
-        font-weight: 300;
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 2rem !important;
-    }
-    
-    .sellheader2 {
-        font-weight: 200;
-        margin: 0;
-        text-align: center;
-        font-size: 1.2rem !important;
-    }
-    
+  .gametitle {
+    font-size: 0.8rem !important;
+  }
 
+  .allgames {
+    margin-bottom: 20px !important;
+  }
 
-     /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+  /* ---------------------------- LIBRARY.HTML PAGE ---------------------------- */
 
+  .installedgames {
+    justify-content: center !important;
+    gap: 6vw !important;
+    row-gap: 7vw !important;
+  }
 
-     #emptycartheader1 {
-        font-size: 1.5rem !important;
-     }
+  .notinstalledgames {
+    justify-content: center !important;
+    gap: 6vw !important;
+    row-gap: 7vw !important;
+  }
 
-     #addgamestocart {
-        font-size: 1rem !important;
-     }
-    
-    
+  .installedgames > img {
+    width: 9vw;
+    min-width: 100px !important;
+    max-width: 290px;
+    align-self: center;
+    transition: 0.2s;
+  }
 
-  } 
-                                    
+  .notinstalledgames > img {
+    width: 9vw;
+    min-width: 100px !important;
+    max-width: 290px;
+    align-self: center;
+    transition: 0.2s;
+  }
+
+  .installedornottext {
+    display: none;
+  }
+
+  .uppertextcontainer {
+    justify-content: center !important;
+  }
+
+  /* ---------------------------- SELL.HTML PAGE ---------------------------- */
+
+  .sellheader1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2rem !important;
+  }
+
+  .sellheader2 {
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem !important;
+  }
+
+  /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+
+  #emptycartheader1 {
+    font-size: 1.5rem !important;
+  }
+
+  #addgamestocart {
+    font-size: 1rem !important;
+  }
+}
