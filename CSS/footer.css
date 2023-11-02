@@ -10,6 +10,15 @@
     --mobilefooterbackround: 0C0C0C;
 }
 
+.footertext2 > a {
+    all: unset;
+    cursor: pointer;
+}
+
+.footertext5 > a {
+    all: unset;
+    cursor: pointer;
+}
 
 
 .footercontainer > ul {
