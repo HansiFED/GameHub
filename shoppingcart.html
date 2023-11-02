@@ -1,6 +1,6 @@
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="CSS/shoppingcart.css" />
     <meta charset="UTF-8" />
     <title>GameHub</title>
     <meta
@@ -53,7 +53,65 @@
 
 
     <main>
-      
+      <div class="shoppingcart-maincontainer">
+        <h1> Shopping Cart </h1>
+        <div class="payment-and-page-container">
+          <div class="paymentwindow">
+            <div class="paymentbox-leftside">
+              <h2> Choose a payment method </h2>
+              <div class="paymentoptionscontainer">
+                <div class="paymentmethod">
+                  <img class="paymentimage" src="favicon_package_v0.16/selectedpaymentoption.png" alt="">
+                  <p> Credit Card </p>
+                </div>
+                <div class="paymentmethod">
+                  <img class="paymentimage" src="favicon_package_v0.16/unselectedpaymentoption.png" alt="">
+                  <img id="paypallogo" src="images/Logos_ect/paypal.png" alt="">
+                </div>
+              </div>
+                <div class="paymentfieldcontainer">
+                  <p> Name on card </p>
+                  <form class="inputfieldlong">
+                    <input id="creditcardnameinput" type="text" name="creditcardname" placeholder="" />
+                  </form>
+                  <p> Credit Card Number </p>
+                  <form class="inputfieldlong">
+                    <input id="creditcardnumber" type="number" name="creditcardnumber" placeholder="•••• •••• •••• ••••" />
+                  </form>
+                  <div class="shortinputcontainer">
+                    <div class="shortinputleft">
+                      <p> Expiry Date</p>
+                      <form class="inputfieldshort">
+                        <input id="creditcardexpiry" type="text" name="creditcardnumber" placeholder="ex. 12/25" />
+                      </form>
+                    </div>
+                    <div class="shortinputright">
+                      <p> Security CVC</p>
+                      <form class="inputfieldshort">
+                        <input id="creditcardsecurity" type="text" name="creditcardsecurity" placeholder="enter CVC" />
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="paymentbox-rightside">
+              <p id="gametitle"> Red Dead Redemption 2</p>
+              <img id="boughtgameimage" src="images/game_images/lowres/readdead2.jpg" alt="">
+              <p id="confirmandpay"> <a href="index.css"> Confirm and pay 250,00kr </a> </p>
+            </div>
+          </div>
+          <div class="pagecontainer">
+              <div class="pagenumbercontainer">
+                  <p id="pagenumberactive"> 1 </p>
+                  <p> Payment Details </p>
+              </div>
+              <div class="pagenumbercontainer">
+                <p id="pagenumberdeactive"> 2 </p>
+                <p> Order Summary </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
 
