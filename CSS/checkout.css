@@ -91,15 +91,14 @@ body {
   gap: 20px;
 }
 
-.checkout-gametags-container > p {
-  cursor: pointer;
-}
+
 
 .checkout-gametags-container > p {
   background-color: var(--pagebackroundcolor);
   padding: 10px;
   border-radius: 25px 25px 25px 25px;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 #gametitledescription {

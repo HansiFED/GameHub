@@ -19,7 +19,18 @@
 
                                 /*----------- MAIN AREA -----------*/
 
+.test2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.test1 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 body {
@@ -33,6 +44,8 @@ body {
     color: var(--whitetext);
 
 }
+
+
 
 
 h1, h2, h3 {
@@ -60,7 +73,7 @@ h1, h2, h3 {
     flex-wrap: wrap;
     gap: 4vw;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 100%;
     padding: 0;
     margin-bottom: 4rem;
