@@ -31,12 +31,14 @@ body {
   color: var(--whitetext);
 }
 
+
 .payment-and-page-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 72px;
 }
 
 .paymentwindow {
@@ -198,6 +200,13 @@ body {
 
 
 /* TEXT ADJUSTMENTS HERE */
+
+.shoppingcart-maincontainer > h1 {
+    margin-left: 5vw;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-weight: 300;
+}
 
 .paymentbox-leftside > h2 {
     font-size: 2em;
