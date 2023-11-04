@@ -337,6 +337,27 @@
     font-size: 1.2rem !important;
   }
 
+  #selecttitles {
+    display: none;
+  }
+
+  .textcontainersell {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  #elligibleforsale {
+    text-align: center;
+  }
+
+
+  .sellallgamescontainer {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
   /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
 
   #emptycartheader1 {

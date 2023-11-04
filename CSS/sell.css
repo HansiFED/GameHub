@@ -62,7 +62,7 @@ body {
   margin: 0;
 }
 
-.textcontainer > h2 {
+.textcontainersell > h2 {
   font-weight: 300;
 }
 
@@ -101,7 +101,7 @@ body {
   padding-right: 10px;
 }
 
-.textcontainer {
+.textcontainersell {
   display: flex;
   flex-direction: row;
   gap: 0;
