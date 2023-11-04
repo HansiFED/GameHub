@@ -16,8 +16,11 @@
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1408px) {
   /*---MOBILE DEVICES VERSION, FOOTER & HEADER----*/
+
+  
+  /* ---------------------------- INDEX.HTML PAGE ---------------------------- */
 
   header {
     background-color: 0C0C0C;
@@ -97,6 +100,22 @@
 
   .TopSellersGames {
     gap: 90px !important;
+  }
+
+  .TopSellersGames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    list-style: none;
+    justify-content: center !important;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 4rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 0;
+    
+
   }
 
   /* ---------------------------- FOOTER ---------------------------- */
@@ -201,6 +220,75 @@
     justify-content: space-between !important;
   }
 
+  /* ---------------------------- SELL.HTML PAGE ---------------------------- */
+  
+  .sellbottomtextcontainer {
+    margin-bottom: 100px !important;
+  }
+
+  /* ---------------------------- GAMEPAGE.HTML PAGE ---------------------------- */
+
+
+  .upperhalf-container {
+    flex-direction: column !important;
+      margin-top: 0px !important;
+  
+  }
+
+
+.test1-gamepage {
+  width: 100% !important;
+}
+  
+.mainmedia > img {
+  width: 100% !important;
+  max-width: 1430px !important;
+}
+
+.mediarow > img {
+  width: 24vw !important;
+  max-width: 330px !important;
+  min-width: 70px !important;
+}
+
+
+.gamedescription {
+  width: 100% !important;
+}
+
+.buyandprice {
+  flex-wrap: wrap;
+}
+
+.box2 {
+  flex-direction: column !important;
+}
+
+#offertimertext {
+  text-align: center;
+}
+
+
+  .gamelistbottom {
+    display: flex;
+    justify-content: center !important;
+    margin-bottom: 130px !important;
+}
+
+ .similartitles > h4 {
+    text-align: center !important;
+  }
+
+  .lowerhalf-container {
+    margin: 0 20px 0 20px;
+  }
+
+  .lowerhalf-container > h3 {
+    text-align: center;
+  }
+
+
+
   /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
 
   #emptycartheader1 {
@@ -246,6 +334,26 @@
 
 @media screen and (max-width: 562px) {
   /*PHONE VERSION MEDIA QUERIES*/
+
+
+
+  .TopSellersGames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    list-style: none;
+    justify-content: center !important;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 4rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 0;
+    
+
+  }
+
+
 
   /* ---------------------------- STORE.HTML PAGE ---------------------------- */
 
@@ -350,15 +458,93 @@
     text-align: center;
   }
 
-
-  .sellallgamescontainer {
-    width: 100% !important;
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
+  #selectedgamestext {
+    display: none;
   }
 
-  /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
+  .bottomelementscontainer {
+    justify-content: center !important;
+  }
+
+
+  
+  .sell-continuebutton {
+    color: var(--whitetext);
+    background-color: var(--pricetagcolor);
+    text-align: center;
+    align-self: center;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    margin-right: 0px !important;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    width: 125px;
+    min-width: 125px;
+  }
+
+
+   /* ---------------------------- GAME PAGE ---------------------------- */
+
+ 
+   #imagebackround {
+    width: 200vw !important; 
+  }
+  
+  
+  .backroundcontainer {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  #gametitle {
+    font-size: 1.5em !important;
+  }
+
+  #gameshortdesc {
+    font-size: 0.9em !important;
+  }
+
+  .gametags {
+    gap: 10px !important;
+  }
+
+  .gametags > p {
+    font-size: 0.5em !important;
+    text-align: center;
+  }
+
+  /* ---------------------------- CONTACT-US.HTNL PAGE ---------------------------- */
+
+  .customer-support-container {
+    margin-bottom: 150px !important;
+    scale: 0.8;
+  }
+
+  .faq-container {
+    scale: 0.8 !important;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .contactus-mainpagecontainer {
+    gap: 0px !important;
+  }
+
+  .contactus-mainpagecontainer > h1 {
+    font-size: 1.8em !important;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .contactus-mainpagecontainer > h2 {
+    font-size: 1.3em !important;
+    text-align: center;
+  }
+
+  /* ---------------------------- SELL.HTML PAGE ---------------------------- */
 
   #emptycartheader1 {
     font-size: 1.5rem !important;

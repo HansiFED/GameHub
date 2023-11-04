@@ -41,17 +41,18 @@ body {
 
 }
 
-.test1 {
+.test1-gamepage {
     display: flex;
     flex-direction: column;
     width: 90%;
     max-width: 2300px;
+
 }
 
 main {
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
 
 }
 
@@ -60,7 +61,7 @@ align-items: center;
 }
 
 #imagebackround {
-    width: 100% !important;
+    width: 100%;
 }
 
 .upperhalf-container {
@@ -80,10 +81,12 @@ align-items: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    height: fit-content;
 }
 
 .mainmedia > img {
-    width: 1000px;
+    width: 50vw;
+    max-width: 1120px;
 }
 
 .mediarow {
@@ -93,8 +96,9 @@ align-items: center;
 }
 
 .mediarow > img {
-    width: 235px;
-    height: 120px;
+    width: 12vw;
+    max-width: 260px;
+    min-width: 100px;
 }
 
 
@@ -172,7 +176,7 @@ align-items: center;
 #pricetag {
     background-color: var(--pagebackroundcolor);
     align-self: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 5px 20px 5px 20px;
 }
 
@@ -214,7 +218,8 @@ align-items: center;
 
 .buyandprice {
     display: flex;
-    gap: 40px;
+    gap: 1vw;
+    justify-content: center;
 }
 
 
@@ -232,15 +237,23 @@ align-items: center;
 .gamelistbottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .similartitles {
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
 .gamelistbottom > img {
     transition: transform 0.2s ease;
+    width: 9vw;
+    max-width: 260px;
+    min-width: 150px
 }
 
 .gamelistbottom > img:hover {
