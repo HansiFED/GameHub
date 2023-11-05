@@ -606,10 +606,42 @@
   
    /* ---------------------------- SHOPPING CART PAGE ---------------------------- */
 
+   .paymentbox-leftside > h2 {
+    font-size: 1em !;
+    margin: 0;
+}
 
 
+    .paymentbox-leftside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      width: 89% !important;
+      gap: 30px;
+    }
 
+    #creditcardnumber {
+      margin: 0 !important;
+    }
 
+    #creditcardnameinput {
+      margin: 0 !important;
+    }
+
+    .paymentbox-leftside > h2 {
+      font-size: 1.5em !important;
+      font-weight: 300 !important;
+      margin: 0;
+      margin-bottom: 20px !important;
+  }
+
+  #boughtgameimage {
+    width: 200px !important;
+}
+
+#hideul {
+  display: none;
+}
 
    /* ---------------------------- CHECKOUT.HTML PAGE ---------------------------- */
 
