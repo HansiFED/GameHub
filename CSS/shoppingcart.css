@@ -39,6 +39,7 @@ body {
     align-items: center;
     gap: 40px;
     margin-top: 72px;
+    margin-bottom: 72px;
 }
 
 .paymentwindow {
@@ -236,6 +237,15 @@ body {
 
 
 
+.footercontainer {
+    width: 100% !important;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
 
+.footercontainer > ul {
+    width: 100% !important;
+}
 
 

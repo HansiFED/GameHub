@@ -220,6 +220,10 @@
     justify-content: space-between !important;
   }
 
+  .systems > img {
+    width: 30px !important;
+  }
+
   /* ---------------------------- SELL.HTML PAGE ---------------------------- */
   
   .sellbottomtextcontainer {
@@ -288,6 +292,21 @@
   }
 
 
+    /* ---------------------------- SHOPPINGCART PAGE ---------------------------- */
+
+  .payment-and-page-container {
+    margin-bottom: 120px !important;
+}
+
+.paymentwindow {
+  flex-direction: column;
+
+    gap: 20px !important;
+
+    background-color: var(--pagebackroundcolor) !important;
+    padding: 0 !important;
+}
+
 
   /* ---------------------------- EMPTYCART.HTML PAGE ---------------------------- */
 
@@ -311,6 +330,16 @@
   }
 }
 
+ /* ---------------------------- CONTACT US PAGE ---------------------------- */
+
+.customer-support-container {
+  margin-bottom: 150px !important;
+}
+
+
+.contactus-mainpagecontainer > h1 {
+  font-size: 2rem !important;
+}
 
 
 
@@ -511,9 +540,26 @@
   }
 
   .gametags > p {
-    font-size: 0.5em !important;
+    font-size: 0.7em !important;
     text-align: center;
   }
+
+  .box1 {
+    padding: 10px 20px 10px 20px !important;
+  }
+
+  .box2 {
+    padding: 10px 20px 10px 20px !important;
+  }
+
+  #hearticon {
+    width: 25px !important;
+  }
+
+
+  
+   /* ---------------------------- SHOPPING CART PAGE ---------------------------- */
+
 
   /* ---------------------------- CONTACT-US.HTNL PAGE ---------------------------- */
 
@@ -534,14 +580,19 @@
   }
 
   .contactus-mainpagecontainer > h1 {
-    font-size: 1.8em !important;
+    font-size: 1.5em !important;
     text-align: center;
     margin-bottom: 60px;
   }
   
   .contactus-mainpagecontainer > h2 {
-    font-size: 1.3em !important;
+    font-size: 1.2em !important;
     text-align: center;
+  }
+
+  .faq-container > h3 {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
   }
 
   /* ---------------------------- SELL.HTML PAGE ---------------------------- */
