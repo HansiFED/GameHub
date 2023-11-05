@@ -292,19 +292,64 @@
   }
 
 
-    /* ---------------------------- SHOPPINGCART PAGE ---------------------------- */
+    /* ---------------------------- SHOPPINGCART.HTML PAGE ---------------------------- */
 
-  .payment-and-page-container {
-    margin-bottom: 120px !important;
-}
 
-.paymentwindow {
-  flex-direction: column;
 
-    gap: 20px !important;
+        .checkout-maincontainer {
+          display: flex;
+          flex-direction: column;
+          gap: 100px !important;
+        }
+    
+        .payment-and-page-container {
+          margin-bottom: 120px !important;
+        }
 
-    background-color: var(--pagebackroundcolor) !important;
-    padding: 0 !important;
+
+        .checkout-upperhalf-container > h1 {
+          text-decoration: underline;
+          font-weight: 300;
+          font-size: 2rem !important;
+      }
+
+
+        .checkout-upperhalf-container > p {
+          width: 80% !important;
+      }
+    
+    
+    
+    
+        .paymentwindow {
+          flex-direction: column;
+    
+          gap: 20px !important;
+    
+          background-color: var(--pagebackroundcolor) !important;
+          padding: 0 !important;
+        }
+    
+        .checkout-container>img {
+          margin: 20px 0px 20px 0px !important;
+          width: 25vw !important;
+          height: auto !important;
+          align-self: center;
+          min-width: 250px !important;
+    
+        }
+
+  /* ---------------------------- CHECKOUT.HTML PAGE ---------------------------- */
+
+  .checkout-container {
+    display: flex;
+    flex-direction: column !important;
+    background-color: rgba(35, 35, 35, 0) !important;
+    width: 80% !important;
+  }
+
+  .checkout-gametags-container > p {
+    background-color: var(--boxes2) !important;
 }
 
 
@@ -417,7 +462,7 @@
   }
 
   .allgames {
-    margin-bottom: 20px !important;
+    margin-bottom: 90px !important;
   }
 
   /* ---------------------------- LIBRARY.HTML PAGE ---------------------------- */
@@ -432,6 +477,7 @@
     justify-content: center !important;
     gap: 6vw !important;
     row-gap: 7vw !important;
+    margin-bottom: 90px !important;
   }
 
   .installedgames > img {
@@ -560,6 +606,90 @@
   
    /* ---------------------------- SHOPPING CART PAGE ---------------------------- */
 
+
+
+
+
+
+   /* ---------------------------- CHECKOUT.HTML PAGE ---------------------------- */
+
+   .checkout-maincontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 100px !important;
+}
+  .checkout-upperhalf-container {
+      margin-top: 50px !important;
+    }
+
+
+   .checkout-upperhalf-container > p {
+    width: 100% !important;
+    font-size: 0.8em !important;
+    text-align: center !important;
+    background-color: var(--boxes2);
+    margin-top: 25px !important;
+   }
+
+   .checkout-upperhalf-container > h1 {
+    font-size: 1.5em !important;
+    text-align: center;
+   }
+
+   #disclaimercheckout {
+    background-color: var(--pagebackroundcolor) !important;
+    width: 90% !important;
+   }
+
+   .checkout-container > img {
+    margin: 20px 0 20px 0px !important;
+    width: 50vw;
+    align-self: center;
+    height: auto !important;
+  }
+
+  #gamedescription {
+    display: none !important;
+  }
+
+  .description-logo-container {
+    display: none !important;
+}
+
+  .checkout-gametags-container > p {
+    background-color: var(--boxes2) !important;
+    padding: 5px !important; 
+    border-radius: 25px 25px 25px 25px;
+    font-size: 0.7rem !important;
+    cursor: pointer;
+}
+
+  .selectyourplatformcontainer {
+    gap: 10px !important;
+  }
+
+  .downloadbutton {
+    margin: 0px !important;
+    margin-top: 10px !important;
+  }
+
+  .checkout-gametags-container {
+    display: flex;
+    justify-content: center !important;
+    gap: 20px;
+}
+
+  .checkout-container {
+    width: 90% !important;
+  }
+
+  .checkout-description-container > h2 {
+    text-align: center;
+  }
+
+  .descriptionbox-bottom-container {
+    flex-direction: column !important;
+  }
 
   /* ---------------------------- CONTACT-US.HTNL PAGE ---------------------------- */
 
