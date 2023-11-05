@@ -92,7 +92,7 @@ h1, h2, h3 {
   .TopSellersGames li img {
     max-width: 400px;
     width: 10.1vw;
-    min-width: 140px;
+    min-width: 130px;
     scale: 1.08;
   }
 

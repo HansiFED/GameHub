@@ -128,7 +128,7 @@ body {
 
 .installedgames > img {
     width: 9vw;
-    min-width: 150px;
+    min-width: 130px;
     max-width: 290px;
     align-self: center;
     transition: transform 0.2s ease;
@@ -151,7 +151,7 @@ body {
 
 .notinstalledgames > img {
     width: 9vw;
-    min-width: 150px;
+    min-width: 130px;
     max-width: 290px;
     align-self: center;
     opacity: 30%;

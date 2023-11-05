@@ -230,7 +230,29 @@
     margin-bottom: 100px !important;
   }
 
-  /* ---------------------------- GAMEPAGE.HTML PAGE ---------------------------- */
+  /* ---------------------------- LIBRARY.HTML PAGE ---------------------------- */
+
+
+
+  .installedgames {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10vw;
+    gap: 2vw;
+    justify-content: center !important;
+
+}
+
+.notinstalledgames {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10vw;
+  gap: 2vw;
+  justify-content: center !important;
+
+}
+
+ /* ---------------------------- GAMEPAGE.HTML PAGE ---------------------------- */
 
 
   .upperhalf-container {
