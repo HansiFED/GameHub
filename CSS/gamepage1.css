@@ -173,6 +173,10 @@ main {
 
 }
 
+#gameshortdesc {
+    overflow:hidden;
+}
+
 #pricetag {
     background-color: var(--pagebackroundcolor);
     align-self: center;
@@ -211,7 +215,7 @@ main {
 }
 
 #weekenddealtext {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     margin: 0;
 }
@@ -227,6 +231,7 @@ main {
     font-size: 2rem;
     font-weight: 300;
     margin-top: 80px;
+    display: none;
 }
 
 .gamedescription {
@@ -253,7 +258,7 @@ main {
     transition: transform 0.2s ease;
     width: 9vw;
     max-width: 260px;
-    min-width: 150px
+    min-width: 120px
 }
 
 .gamelistbottom > img:hover {
@@ -266,4 +271,23 @@ main {
 .similartitles > h4 {
     font-size: 2rem;
     font-weight: 200;
+}
+
+#mobiletextgamepage {
+    display: none;
+}
+
+
+#moreaboutthisgametextdesktop {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 80px;
+}
+
+#desktoponly {
+    font-weight: 200;
+}
+
+.mediatest {
+    margin: 0px;
 }

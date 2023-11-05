@@ -313,6 +313,18 @@
     text-align: center;
   }
 
+  #mobiletextgamepage {
+    display: block !important;
+}
+
+#moreaboutthisgametext {
+  display: block !important;
+}
+
+figcaption {
+  display: none !important;
+}
+
 
     /* ---------------------------- SHOPPINGCART.HTML PAGE ---------------------------- */
 
