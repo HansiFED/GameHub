@@ -71,9 +71,8 @@ h1, h2, h3 {
 .TopSellersGames {
     display: flex;
     flex-wrap: wrap;
-    gap: 4vw;
+    gap: 2vw;
     list-style: none;
-    justify-content: space-between;
     max-width: 100%;
     padding: 0;
     margin-bottom: 4rem;
@@ -131,7 +130,7 @@ I won't be using this over again, I'd just rather have it here for now and keep 
       gap: 60px !important;
     }
 
-    #bottomlist {
+    .bottomlist {
       padding-bottom: 110px;
     }
   
