@@ -1,6 +1,6 @@
 
 // User Stories
-// - As a user, I want to view a list of products on the homepage.
+// - As a user, I want to view a list of products on the homepage.✅
 // - As a user, I want to filter products by category, gender or genre.
 // - As a user, I want to view a single product page with more detail.
 // - As a user, I want to add a product to my basket.
@@ -18,34 +18,12 @@
 // - Confirmation Page showing a thank you message `/checkout/confirmation/index.html`
 
 
-// Create HTML for each element
-
-// Append each element to the DOM 
-
-// 
 
 
 
 
 import { noroffGameAPI } from "./constants.mjs"; 
 import { myFetcher } from "./fetcher.mjs"; 
-
-
-
-// function displayHTML (gamehtml) {
-
-// 	const gameRow1 = document.getElementById('GamesList');
-// 	const gameRow2 = document.getElementById('GamesList2');
-// 	const gameRow3 = document.getElementById('GamesList3');
-
-// 	gameRow1.append(gamehtml);
-// 	gameRow2.append(gamehtml);
-// 	gameRow3.append(gamehtml);
-
-// 	console.log(gameRow1, gameRow2, gameRow3);
-	
-
-// }
 
 
 
