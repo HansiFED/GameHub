@@ -1,7 +1,7 @@
 // User Stories
 // - As a user, I want to view a list of products on the homepage.✅
-// - As a user, I want to filter products by category, gender or genre.
-// - As a user, I want to view a single product page with more detail.
+// - As a user, I want to filter products by category, gender or genre.✅
+// - As a user, I want to view a single product page with more detail. ✅
 // - As a user, I want to add a product to my basket.
 // - As a user, I want to remove a product from my basket.
 // - As a user, I want to view a summary of my cart on the checkout page.
@@ -33,11 +33,6 @@ import { addGenreEventListeners } from "./filter.mjs";
 // Creates an <li> item and nests a <img> with the src and alt
 // attribute to match the game its creating an <img> for, and then
 // appends that to the DOM. 
-
-
-
-
-
 
 
 

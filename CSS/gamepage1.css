@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 2300px;
+    max-width: 1600px;
 
 }
 
@@ -86,7 +86,7 @@ main {
 
 .mainmedia > img {
     width: 50vw;
-    max-width: 1120px;
+    max-width: 600px;
 }
 
 .mediarow {
@@ -107,6 +107,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 85vw;
+    max-width: 800px;
 }
 
 
