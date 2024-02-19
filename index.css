@@ -109,7 +109,40 @@ h1, h2, h3 {
 }
 
 
+.gametitle {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.gameonSale {
+  color: #48e637;
+}
+
+
+.filterby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.filterby  li {
+  list-style: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.filterby  li:hover {
+  transition: 0.2s;
+  color: #46D3FF;
+}
+
+.ul-filterbox {
+  position: absolute;
+  padding: 0px;
+  z-index: 20;
+}
 
 
 

@@ -1,4 +1,3 @@
-
 // User Stories
 // - As a user, I want to view a list of products on the homepage.✅
 // - As a user, I want to filter products by category, gender or genre.
@@ -10,7 +9,7 @@
 
 
 // Required Pages
-// The following pages are required to complete this assignment.
+// The following pages are re	quired to complete this assignment.
 
 // - Home Page containing product list `/index.html`
 // - Product Page showing all details of a specific product `/product/index.html`
@@ -24,6 +23,9 @@
 
 import { noroffGameAPI } from "./constants.mjs"; 
 import { myFetcher } from "./fetcher.mjs"; 
+import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs";
+import { addGenreEventListeners } from "./filter.mjs";
+
 
 
 
@@ -32,26 +34,7 @@ import { myFetcher } from "./fetcher.mjs";
 // attribute to match the game its creating an <img> for, and then
 // appends that to the DOM. 
 
-function indexGameHtmlBuilder (game) {
 
-	const gameRow1 = document.getElementById('GamesList');
-
-
-	game.forEach(game => {
-
-
-		const listCreate = document.createElement('li');
-		const imageCreate = document.createElement('img');
-		imageCreate.setAttribute('src', game.image.url);
-		imageCreate.setAttribute('alt', game.title);
-		listCreate.append(imageCreate);
-		console.log(listCreate);
-
-		gameRow1.append(listCreate);
-
-
-	});
-}
 
 
 
@@ -65,6 +48,7 @@ const main = async function () {
 		console.log('The object information', games);
 		console.log('The different objects', gameObjects);
 		indexGameHtmlBuilder(gameObjects);
+		addGenreEventListeners(gameObjects);
 		// displayHTML(gameObjects);
 		
 
@@ -76,3 +60,8 @@ const main = async function () {
 }
 
 main();
+
+
+
+
+
