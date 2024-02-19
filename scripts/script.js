@@ -9,7 +9,7 @@
 
 
 // Required Pages
-// The following pages are re	quired to complete this assignment.
+// The following pages are required to complete this assignment.
 
 // - Home Page containing product list `/index.html`
 // - Product Page showing all details of a specific product `/product/index.html`
