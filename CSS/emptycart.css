@@ -45,6 +45,7 @@ body {
     color: var(--whitetext);
     font-size: 3rem;
     margin: 0;
+    z-index: 0;
 
 }
 
@@ -89,17 +90,26 @@ ul {
 main {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: center;
-}
-
-body, html {
-    overflow: hidden;
+    align-items: center;
 }
 
 
 
 
 
+
+/* HERE I PUT STYLES FOR JAVASCRIPT GENERATED HTML */ 
+
+
+.checkoutImages {
+    width: 200px;
+}
+
+.elementbox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
 
 

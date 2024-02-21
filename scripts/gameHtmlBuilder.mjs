@@ -20,7 +20,6 @@ export function indexGameHtmlBuilder (game) {
 			localStorage.setItem('gameInfo', JSON.stringify(game))
 		} )
 		hyperLinkCreate.setAttribute('href', './gamepage1.html');
-		console.log(game.title);
 
 		//Here i change the elements to what I want them to contain / be. 
 
@@ -36,7 +35,6 @@ export function indexGameHtmlBuilder (game) {
 			priceCreate.innerText = `${game.price} $`;
 		}
 		gameTitle.className = 'gametitle';
-		console.log(listCreate);
 		listCreate.append(gameTitle);
 		listCreate.appendChild(priceCreate);
 		gameRow1.append(listCreate);

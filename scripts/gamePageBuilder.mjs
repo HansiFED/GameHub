@@ -1,9 +1,14 @@
 
+import { addToCart } from "./addtocart.mjs";
+import { createCart } from "./addtocart.mjs";
+
+createCart();
+
+let localStorageGame = JSON.parse(localStorage.getItem('gameInfo'));
 
 
 function gamePageBuilder () {
    let localStorageGame = JSON.parse(localStorage.getItem('gameInfo'));
-   console.log(localStorageGame);
    gamePageHTML(localStorageGame);
 }
 
@@ -15,7 +20,6 @@ function gamePageHTML (localStorageGame) {
     let gamePrice = document.getElementById('pricetag')
     let mainGameImage = document.getElementById('mainimage')
 
-    console.log(localStorageGame);
     gameTitle.innerHTML = localStorageGame.title;
     gameDesc.innerHTML = localStorageGame.description;
     if (localStorageGame.onSale) {
@@ -29,3 +33,10 @@ function gamePageHTML (localStorageGame) {
 
 
 gamePageBuilder();
+
+
+let addToCartButton = document.getElementById('addtocart');
+
+addToCartButton.addEventListener('click', () => {
+    addToCart(localStorageGame);
+})

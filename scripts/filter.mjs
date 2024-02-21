@@ -1,4 +1,10 @@
 
+// Add event listeners to all the items that are generated ✅
+
+// Filter the displayed list depending on what filters are enabled. ✅
+
+
+
 
 import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs"
 

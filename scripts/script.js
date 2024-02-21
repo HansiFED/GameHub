@@ -2,7 +2,7 @@
 // - As a user, I want to view a list of products on the homepage.✅
 // - As a user, I want to filter products by category, gender or genre.✅
 // - As a user, I want to view a single product page with more detail. ✅
-// - As a user, I want to add a product to my basket.
+// - As a user, I want to add a product to my basket. ✅
 // - As a user, I want to remove a product from my basket.
 // - As a user, I want to view a summary of my cart on the checkout page.
 // - As a user, I want to view an order-confirmation screen after checking out.
@@ -25,6 +25,7 @@ import { noroffGameAPI } from "./constants.mjs";
 import { myFetcher } from "./fetcher.mjs"; 
 import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs";
 import { addGenreEventListeners } from "./filter.mjs";
+import { createCart } from "./addtocart.mjs";
 
 
 
@@ -38,6 +39,7 @@ import { addGenreEventListeners } from "./filter.mjs";
 
 const main = async function () {
 	try {
+		createCart();
 		const games = await myFetcher(noroffGameAPI);
 		const gameObjects = games.data;
 		console.log('The object information', games);
@@ -55,8 +57,4 @@ const main = async function () {
 }
 
 main();
-
-
-
-
 

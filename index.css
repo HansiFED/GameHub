@@ -126,6 +126,9 @@ h1, h2, h3 {
   align-items: center;
 }
 
+#summaryfield {
+  cursor: pointer;
+}
 
 .filterby  li {
   list-style: none;
