@@ -7,21 +7,47 @@ createCart();
 let localStorageGame = JSON.parse(localStorage.getItem('gameInfo'));
 
 
-function gamePageBuilder () {
-   let localStorageGame = JSON.parse(localStorage.getItem('gameInfo'));
-   gamePageHTML(localStorageGame);
-}
+let addToCartButton = document.getElementById('addtocart');
+
+addToCartButton.addEventListener('click', () => {
+    addToCart(localStorageGame);
+})
 
 
-
-function gamePageHTML (localStorageGame) {
+function gamePageHtmlBuilder (localStorageGame) {
     let gameTitle = document.getElementById('gametitle')
+    gameTitle.innerHTML = localStorageGame.title;
+
+    let gameAgeRating = document.getElementById('agerating')
+    gameAgeRating.innerText = `Age rating: ${localStorageGame.ageRating}`
+
     let gameDesc = document.getElementById('gameshortdesc')
+    gameDesc.innerHTML = localStorageGame.description;
+
+    let releaseYear = document.getElementById('releaseYear')
+    releaseYear.innerHTML = `Release Year: ${localStorageGame.released}`
+
+    let genreText = document.getElementById('genreText')
+    genreText.innerText = `Genre: ${localStorageGame.genre}`
+
+    let isFavorited = document.getElementById('hearticon')
+    let isFavoritedTextContainer = document.getElementById('favoritedTextContainer')
+    if (localStorageGame.favorite) {
+        isFavorited.classList = 'fa-solid fa-heart';
+        console.log('red tried to be applied');
+        isFavorited.style.color = 'red';
+        isFavoritedTextContainer.innerText = 'Favorited';
+
+    } else {
+        isFavorited.classList = 'fa-regular fa-heart';
+        console.log('normal heart');
+    }
+
     let gamePrice = document.getElementById('pricetag')
+
     let mainGameImage = document.getElementById('mainimage')
 
-    gameTitle.innerHTML = localStorageGame.title;
-    gameDesc.innerHTML = localStorageGame.description;
+
     if (localStorageGame.onSale) {
         gamePrice.innerHTML= `${localStorageGame.discountedPrice} $`;
     } else {
@@ -32,11 +58,6 @@ function gamePageHTML (localStorageGame) {
 
 
 
-gamePageBuilder();
+gamePageHtmlBuilder(localStorageGame);
 
 
-let addToCartButton = document.getElementById('addtocart');
-
-addToCartButton.addEventListener('click', () => {
-    addToCart(localStorageGame);
-})

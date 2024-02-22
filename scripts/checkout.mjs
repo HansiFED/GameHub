@@ -1,5 +1,7 @@
 import { createCart } from "./addtocart.mjs"
 import { updateCartTotal } from "./updateCartTotal.mjs";
+import { clearCart } from "./addtocart.mjs";
+import { removeCartItem } from "./addtocart.mjs";
 createCart();
 
 
@@ -10,6 +12,7 @@ createCart();
 //Set the localstorage Object we get back by parsing it to Shoppingcart variable.
 //I also call the updateCartTotal function to summarize the total of the cart. 
 const shoppingcart = JSON.parse(localStorage.getItem('cart'));
+
 updateCartTotal(shoppingcart);
 
 
@@ -35,6 +38,8 @@ function generateCheckoutHtml () {
         let addGamesText = document.getElementById('addgamestocart');
 
 
+        let addToCartButton = document.getElementById('addtocartbutton');
+        addToCartButton.addEventListener('click', clearCart);
 
 
         let cartTitle = document.createElement('h1');
@@ -62,6 +67,7 @@ function generateCheckoutHtml () {
 
             let cartItemContainer = document.createElement('div');
             cartItemContainer.classList = 'cart-item-container';
+            cartItemContainer.setAttribute('data-game-id', element.id)
 
             let image = document.createElement('img');
             image.classList = 'gameImage';
@@ -83,6 +89,8 @@ function generateCheckoutHtml () {
             let checkoutRemoveButton = document.createElement('button');
             checkoutRemoveButton.classList = 'remove-from-cart-button';
             checkoutRemoveButton.innerText = 'Remove From Cart';
+            checkoutRemoveButton.addEventListener('click', removeCartItem);
+
             
 
        

@@ -1,4 +1,5 @@
-
+import { removeFromCartAndUpdateStorage } from "./remove.mjs";
+import { updateCartTotal } from "./updateCartTotal.mjs";
 
 export function createCart (game) {
     const cartExists = localStorage.getItem('cart');
@@ -28,6 +29,29 @@ export function addToCart (game) {
 
     localStorage.setItem('cart', JSON.stringify(cart));
     
+}
+
+
+const shoppingcart = JSON.parse(localStorage.getItem('cart'));
+
+export function removeCartItem(event){
+    const buttonClicked = event.target
+
+    let idContainer = buttonClicked.parentElement;
+
+    let itemId = idContainer.getAttribute('data-game-id');
+
+    removeFromCartAndUpdateStorage(itemId);
+
+    buttonClicked.parentElement.remove();
+
+}
+
+
+
+export function clearCart () {
+    localStorage.removeItem('cart');
+    alert('Thank you for your purchase. Your cart has been cleared.');
 }
 
 
