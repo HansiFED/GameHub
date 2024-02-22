@@ -15,6 +15,8 @@
     --pagebackroundcolor: 121212;
     --footer: rgba(82, 82, 82, 0.17);
     --mobilefooterbackround: 0C0C0C;
+    --pricetagcolor: 3B5B15;
+    --pricetagcolorhover: 86C936;
 }
 
 
@@ -67,6 +69,7 @@ h2 {
     align-items: center;
     gap: 3vh;
     padding-bottom: 18vh;
+
 }
 
 
@@ -92,24 +95,73 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 
+
+#addtocartbutton {
+    color: var(--whitetext);
+    background-color: var(--pricetagcolor);
+    text-align: center;
+    align-self: center;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    width: 300px;
+    margin-right: 0;
+    text-transform: uppercase;
+}
+
+
+#addtocartbutton:hover {
+    background-color: var(--pricetagcolorhover);
+  }
+  
 
 
 
 
 /* HERE I PUT STYLES FOR JAVASCRIPT GENERATED HTML */ 
 
-
-.checkoutImages {
+.gameImage {
     width: 200px;
 }
 
-.elementbox {
+.cart-full-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cart-item-container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    width: 50vw;
+}
+
+
+.cart-item-text-container {
+    margin-left: 20px;
+}
+
+.remove-from-cart-button {
+    height: 30px;
+    align-self: flex-end;
+}
+
+
+#cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+#cart-bottom-text {
+    display: flex;
 }
 
 

@@ -1,78 +1,113 @@
 import { createCart } from "./addtocart.mjs"
+import { updateCartTotal } from "./updateCartTotal.mjs";
 createCart();
 
 
+
+
+
+
+//Set the localstorage Object we get back by parsing it to Shoppingcart variable.
+//I also call the updateCartTotal function to summarize the total of the cart. 
 const shoppingcart = JSON.parse(localStorage.getItem('cart'));
-
-
-//Make HTML for each element 
-//Append the elements so that they show on the page
+updateCartTotal(shoppingcart);
 
 
 
 
 
+// Here I generate all the HTML for the page. 
 function generateCheckoutHtml () {
     if (localStorage.getItem('cart') !== '[]') {
 
         
+        //Select the right elements to process from the HTML && Make One Time instances
+        let cart = localStorage.getItem('cart');
         let main = document.querySelector('main');
+        let cartBottom = document.querySelector('#cart-bottom');
+       
         let mainCheckoutContainer = document.createElement('div');
+        mainCheckoutContainer.classList = 'cart-full-container';
+        main.append(mainCheckoutContainer);
+        main.insertBefore(mainCheckoutContainer, cartBottom);
+
         let emptyCartText = document.getElementById('emptycartheader1');
         let addGamesText = document.getElementById('addgamestocart');
-        addGamesText.remove();
-        emptyCartText.innerText = 'Your shopping cart:'
-        document.getElementById('textcontainercheckout').style.paddingBottom = '10vh';
 
+
+
+
+        let cartTitle = document.createElement('h1');
+        cartTitle.innerText = ' Your Shopping Cart: ';
+        mainCheckoutContainer.append(cartTitle);
+    
+
+        let totalAmountBox = document.createElement('div');
+        let gamePriceTotal = document.createElement('p');
+        totalAmountBox.append(gamePriceTotal);
+        main.appendChild(totalAmountBox);
+
+    
 
 
         shoppingcart.forEach((element) => {
 
             //Create all the neccessary elements for the shoppingcart items
-            let elementBox = document.createElement('div');
-            let imageCreator = document.createElement('img');
-            let checkoutGameTitle = document.createElement('h3');
-            let checkoutGamePrice = document.createElement('p');
-            let checkoutGamePriceCheck = () => {
+
+                 let checkoutGamePriceCheck = () => {
             if (element.onSale) {
                 return element.discountedPrice;
             } else {
                 return element.price; }}
 
+            let cartItemContainer = document.createElement('div');
+            cartItemContainer.classList = 'cart-item-container';
+
+            let image = document.createElement('img');
+            image.classList = 'gameImage';
+            image.src = element.image.url;
+            
+
+            let cartItemTextContainer = document.createElement('div');
+            cartItemTextContainer.classList = 'cart-item-text-container';
+
+
+            let checkoutGameTitle = document.createElement('h3');
+            checkoutGameTitle.innerText = element.title;
+
+
+            let checkoutGamePrice = document.createElement('p');
+            checkoutGamePrice.innerText = `$ ${checkoutGamePriceCheck()}`;
+
 
             let checkoutRemoveButton = document.createElement('button');
-            let gamePriceTotal = document.createElement('p');
-
-
-        
-
-            //Assign them the right values
-            imageCreator.src = element.image.url;
-            checkoutGameTitle.innerText = element.title;
-            checkoutGamePrice.innerText =  `Price: ${checkoutGamePriceCheck()}$`
-            checkoutRemoveButton.innerText = 'Remove';
-            gamePriceTotal.innerText = element.price * element.quantity;
+            checkoutRemoveButton.classList = 'remove-from-cart-button';
+            checkoutRemoveButton.innerText = 'Remove From Cart';
             
+
+       
+        
 
 
 
             //Append everything to where it belongs
-            elementBox.append(imageCreator, checkoutGameTitle, checkoutGamePrice, checkoutRemoveButton);
-            mainCheckoutContainer.append(elementBox);
-            main.append(mainCheckoutContainer);
-
-
-
-            //Assign them the right classes for CSS manipulation. 
-            imageCreator.classList = 'checkoutImages';
-            elementBox.classList = 'elementbox';
-
+            mainCheckoutContainer.append(cartItemContainer);
+            cartItemContainer.append(image, cartItemTextContainer, checkoutRemoveButton);
+            cartItemTextContainer.append(checkoutGameTitle, checkoutGamePrice);
 
 
 
 
         });
+
+
+        
+
     } 
 }
 
 generateCheckoutHtml();
+
+
+
+
