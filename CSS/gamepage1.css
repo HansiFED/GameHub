@@ -27,6 +27,26 @@ a {
     all: unset;
 }
 
+#logoimage {
+    cursor: pointer;
+}
+
+#shoppingcarticon {
+    cursor: pointer;
+}
+
+#cart-notification {
+    position: absolute;
+    top: 15px;
+    right: 125px;
+    background-color: green;
+    color: white;
+    padding: 0px 5px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+
 
 body {
 
@@ -204,7 +224,9 @@ main {
 #addtocart:hover {
     background-color: var(--pricetagcolorhover);
   }
+
   
+
 
 #offertimertext {
     font-weight: 200;

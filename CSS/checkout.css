@@ -22,6 +22,17 @@ a {
   all: unset;
 }
 
+
+#logoimage {
+  cursor: pointer;
+}
+
+#shoppingcarticon {
+  cursor: pointer;
+}
+
+
+
 body {
   background-color: var(--pagebackroundcolor);
   margin: 0;

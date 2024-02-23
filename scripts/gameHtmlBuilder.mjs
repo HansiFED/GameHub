@@ -2,7 +2,7 @@
 
 export function indexGameHtmlBuilder (game) {
 
-
+	//Here I set the inner HTML to blank so that when I filter it doesen't lay double or add unto it
 	const gameRow1 = document.getElementById('GamesList');
 	gameRow1.innerHTML = "";
 

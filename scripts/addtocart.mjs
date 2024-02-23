@@ -1,5 +1,16 @@
-import { removeFromCartAndUpdateStorage } from "./remove.mjs";
+import { removeAndUpdate } from "./remove.mjs";
 import { updateCartTotal } from "./updateCartTotal.mjs";
+cartIconUpdater();
+
+
+
+
+
+
+//Under you'll find all the basic cart functions you'd expect in one module. 
+
+
+
 
 export function createCart (game) {
     const cartExists = localStorage.getItem('cart');
@@ -8,6 +19,9 @@ export function createCart (game) {
         console.log("No cart, Cart has been added");
     }
 }
+
+//---------------------------------------------------------------------------------------
+
 
 
 export function addToCart (game) {
@@ -28,31 +42,61 @@ export function addToCart (game) {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    localStorage.setItem('cartCounter', cart.length);
+
+    cartIconUpdater();
     
 }
 
+//---------------------------------------------------------------------------------------
 
-const shoppingcart = JSON.parse(localStorage.getItem('cart'));
+
 
 export function removeCartItem(event){
-    const buttonClicked = event.target
 
-    let idContainer = buttonClicked.parentElement;
+    const button = event.target
 
-    let itemId = idContainer.getAttribute('data-game-id');
+    let idElementContainer = button.parentElement;
 
-    removeFromCartAndUpdateStorage(itemId);
+    let itemId = idElementContainer.getAttribute('data-game-id');
 
-    buttonClicked.parentElement.remove();
+    removeAndUpdate(itemId);
+
+    button.parentElement.remove();
+
+    cartIconUpdater();
 
 }
 
+
+//---------------------------------------------------------------------------------------
 
 
 export function clearCart () {
     localStorage.removeItem('cart');
     alert('Thank you for your purchase. Your cart has been cleared.');
+    localStorage.setItem('cartCounter', 0);
 }
 
 
 
+//---------------------------------------------------------------------------------------
+
+
+
+export function cartIconUpdater () {
+
+
+    let cartIconElement = document.getElementById('cart-notification');
+    let cartCounter = localStorage.getItem('cartCounter');
+
+
+    if (localStorage.getItem('cartCounter') <= 0) {
+        cartIconElement.style.display = 'none';
+    } else {
+        cartIconElement.style.display = 'block';
+        cartIconElement.innerText = cartCounter;
+    }
+
+}

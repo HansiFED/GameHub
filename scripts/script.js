@@ -1,3 +1,15 @@
+
+import { noroffGameAPI } from "./constants.mjs"; 
+import { myFetcher } from "./fetcher.mjs"; 
+import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs";
+import { addGenreEventListeners } from "./filter.mjs";
+import { createCart } from "./addtocart.mjs";
+
+
+
+
+
+
 // User Stories
 // - As a user, I want to view a list of products on the homepage.✅
 // - As a user, I want to filter products by category, gender or genre.✅
@@ -18,18 +30,6 @@
 
 
 
-
-
-
-import { noroffGameAPI } from "./constants.mjs"; 
-import { myFetcher } from "./fetcher.mjs"; 
-import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs";
-import { addGenreEventListeners } from "./filter.mjs";
-import { createCart } from "./addtocart.mjs";
-
-
-
-
 // Takes a game argument, in this case the object data from the API and 
 // Creates an <li> item and nests a <img> with the src and alt
 // attribute to match the game its creating an <img> for, and then
@@ -46,7 +46,6 @@ const main = async function () {
 		console.log('The different objects', gameObjects);
 		indexGameHtmlBuilder(gameObjects);
 		addGenreEventListeners(gameObjects);
-		// displayHTML(gameObjects);
 		
 
 

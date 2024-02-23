@@ -13,7 +13,7 @@
     --boxes1: 1C1C1C;
     --boxes2: 232323;
     --pagebackroundcolor: 121212;
-    --footer: rgba(82, 82, 82, 0.17);
+    --footer: rgb(30, 30, 30);
     --mobilefooterbackround: 0C0C0C;
     --pricetagcolor: 3B5B15;
     --pricetagcolorhover: 86C936;
@@ -25,6 +25,10 @@
 
 a {
     all: unset;
+}
+
+#logoimage {
+    cursor: pointer;
 }
 
 
@@ -112,6 +116,7 @@ main {
     width: 300px;
     margin-right: 0;
     text-transform: uppercase;
+    margin-bottom: 100px;
 }
 
 
@@ -125,6 +130,21 @@ main {
 
 /* HERE I PUT STYLES FOR JAVASCRIPT GENERATED HTML */ 
 
+#cart-notification {
+    position: absolute;
+    top: 15px;
+    right: 125px;
+    background-color: green;
+    color: white;
+    padding: 0px 5px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+#shoppingcarticon {
+    cursor: pointer;
+}
+
 .gameImage {
     width: 200px;
 }
@@ -133,6 +153,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 
 .cart-item-container {
@@ -162,6 +183,7 @@ main {
 
 #cart-bottom-text {
     display: flex;
+    margin-top: 50px;
 }
 
 

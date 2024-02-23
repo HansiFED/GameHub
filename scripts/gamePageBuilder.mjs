@@ -49,6 +49,11 @@ function gamePageHtmlBuilder (localStorageGame) {
 
 
     if (localStorageGame.onSale) {
+        //here I create,set and append the original price in addition to show the before sale price
+        let displayNormalPrice = document.createElement('p');
+        displayNormalPrice.innerText = `Before sale: ${localStorageGame.price} $`;
+        genreText.parentNode.insertBefore(displayNormalPrice, genreText.nextSibling);
+
         gamePrice.innerHTML= `${localStorageGame.discountedPrice} $`;
     } else {
         gamePrice.innerText = `${localStorageGame.price} $`;

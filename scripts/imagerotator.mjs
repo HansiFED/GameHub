@@ -27,4 +27,4 @@
     }
   }
 
-  setInterval(rotateImage, 10000);
+  setInterval(rotateImage, 8000);

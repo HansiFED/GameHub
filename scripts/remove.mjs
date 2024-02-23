@@ -5,7 +5,7 @@ import { updateCartTotal } from "./updateCartTotal.mjs";
 
 
 
-export function removeFromCartAndUpdateStorage(itemId) {
+export function removeAndUpdate(itemId) {
     // Retrieve the cart from local storage
     const cart = JSON.parse(localStorage.getItem('cart'));
 
@@ -23,6 +23,8 @@ export function removeFromCartAndUpdateStorage(itemId) {
     } else {
         console.log('Item not found in cart.');
     }
+
+    localStorage.setItem('cartCounter', cart.length);
 
     updateCartTotal(cart);
 }
