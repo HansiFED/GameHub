@@ -1,4 +1,4 @@
-// A little image changer I experimented with just for fun.
+// A little image changer I experimented with just for fun, it's not the prettiest but gets the job done.
 
   var images = [
     "./images/game_images/reddeadcover.jpg",

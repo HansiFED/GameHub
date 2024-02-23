@@ -8,17 +8,10 @@ createCart();
 //I also call the updateCartTotal function to summarize the total of the cart.
 const shoppingcart = JSON.parse(localStorage.getItem("cart"));
 
-
 updateCartTotal(shoppingcart);
-
-
-
-
-
 
 // Here I generate all the HTML for the page.
 //----------------------------------------------------------------------------------
-
 
 function generateCheckoutHtml() {
   if (localStorage.getItem("cart") !== "[]") {
@@ -46,8 +39,6 @@ function generateCheckoutHtml() {
     let gamePriceTotal = document.createElement("p");
     totalAmountBox.append(gamePriceTotal);
     main.appendChild(totalAmountBox);
-
-
 
     shoppingcart.forEach((element) => {
       //Create all the neccessary elements for the shoppingcart items
@@ -92,23 +83,20 @@ function generateCheckoutHtml() {
       cartItemTextContainer.append(checkoutGameTitle, checkoutGamePrice);
     });
   } else {
-
-
     //Here I clean up some text and place in a placeholder if the cart's empty.
 
     let main = document.querySelector("main");
 
-    const cartBottomRemover = document.getElementById('cart-bottom');
+    const cartBottomRemover = document.getElementById("cart-bottom");
     cartBottomRemover.remove();
 
-    const placeHolderEmptyHeader = document.createElement('h1');
-    placeHolderEmptyHeader.innerText = 'Oops! Looks a little empty here :('
+    const placeHolderEmptyHeader = document.createElement("h1");
+    placeHolderEmptyHeader.innerText = "Oops! Looks a little empty here :(";
 
-    const placeHolderEmptyText = document.createElement('p');
-    placeHolderEmptyText.innerText = 'Add games to your cart to see them here!'
+    const placeHolderEmptyText = document.createElement("p");
+    placeHolderEmptyText.innerText = "Add games to your cart to see them here!";
 
     main.append(placeHolderEmptyHeader, placeHolderEmptyText);
-
   }
 }
 
