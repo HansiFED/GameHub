@@ -1,4 +1,6 @@
 import { noroffGameAPI } from "./constants.mjs";
+import { showLoadingIcon } from "./loader.mjs";
+import { hideLoadingIcon } from "./loader.mjs";
 import { myFetcher } from "./fetcher.mjs";
 import { indexGameHtmlBuilder } from "./gameHtmlBuilder.mjs";
 import { addGenreEventListeners } from "./filter.mjs";
@@ -28,6 +30,7 @@ import { createCart } from "./addtocart.mjs";
 
 const main = async function () {
   try {
+    showLoadingIcon();
     createCart();
     const games = await myFetcher(noroffGameAPI);
     const gameObjects = games.data;
@@ -35,6 +38,7 @@ const main = async function () {
     console.log("The different objects", gameObjects);
     indexGameHtmlBuilder(gameObjects);
     addGenreEventListeners(gameObjects);
+    hideLoadingIcon();
   } catch (error) {
     console.error(error);
   }
